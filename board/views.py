@@ -19,3 +19,6 @@ def update(request):
 def select(request):
     return render(request, 'board/select.html')
 
+def delete(request):
+    return render(request, 'board/delete.html')
+
