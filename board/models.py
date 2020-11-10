@@ -12,3 +12,17 @@ class Board(models.Model):
     views = models.IntegerField(default=0)
     thumbup = models.IntegerField(default=0)
     contents = models.TextField()
+
+
+class Employees(models.Model):
+    fname = models.CharField(max_length=20)
+    lname = models.CharField(max_length=20)
+    email = models.CharField(max_length=100)
+    phone = models.CharField(max_length=15)
+    hdate = models.DateTimeField()
+    jobid = models.CharField(max_length=20)
+    sal = models.IntegerField()
+    commpct = models.FloatField()
+    mgrid = models.IntegerField()
+    deptid = models.IntegerField()
+
